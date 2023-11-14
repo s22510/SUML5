@@ -14,8 +14,7 @@ def main():
     if uploaded_file:
         st.image(uploaded_file, use_column_width=True)
         prediction = model.predict(uploaded_file.read())[0]
-        st.subheader("This is "+prediction)
-        st.write(prediction[1])
+        st.subheader("This is a "+prediction)
 
 
 if __name__ == "__main__":

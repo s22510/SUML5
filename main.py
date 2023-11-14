@@ -2,7 +2,7 @@ import streamlit as st
 from fastai.learner import load_learner
 
 
-filename = "\model.pkl"
+filename = "model.pkl"
 model = load_learner(filename)
 
 
